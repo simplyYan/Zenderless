@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: #f0f4f8;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.app {
+    background: #fff;
+    width: 100%;
+    max-width: 400px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+header {
+    background: #0263ff;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    border-bottom: 2px solid #e5e7eb;
+    font-family: "Hind Siliguri", sans-serif;
+}
+
+header h1 {
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+main {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.meditation-item {
+    display: flex;
+    align-items: center;
+    background: #f9fafb;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
+}
+
+.meditation-item img {
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+    margin-right: 10px;
+}
+
+.meditation-item .details {
+    display: flex;
+    flex-direction: column;
+}
+
+.meditation-item .details h3 {
+    font-size: 16px;
+    color: #111827;
+}
+
+.meditation-item .details p {
+    font-size: 14px;
+    color: #6b7280;
+}
+
+footer {
+    background: #e5e7eb;
+    text-align: center;
+    padding: 10px;
+    font-size: 12px;
+}
+
+@media (max-width: 600px) {
+    .app {
+        max-width: 90%;
+    }
+}
